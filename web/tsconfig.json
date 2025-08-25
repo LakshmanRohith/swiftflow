@@ -4,7 +4,6 @@
     "useDefineForClassFields": true,
     "lib": ["ES2020", "DOM", "DOM.Iterable"],
     "module": "ESNext",
-    "types": ["node"],
     "skipLibCheck": true,
 
     /* Bundler mode */
@@ -30,5 +29,7 @@
     }
   },
   "include": ["src"],
+  // FIX: Exclude the server directory from the frontend's build process
+  "exclude": ["../server"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
