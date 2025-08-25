@@ -1,0 +1,4 @@
+# path: .vercelignore
+
+# Ignore the entire server directory during Vercel builds
+server
