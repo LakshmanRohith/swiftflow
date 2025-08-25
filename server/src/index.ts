@@ -61,8 +61,8 @@ app.use(
   cors({
     origin: (origin, callback) => {
       const allowedOrigins = [
-        'http://localhost:5173',               // local frontend
-        'https://swiftflow-omega.vercel.app'  // Vercel frontend
+        'http://localhost:5173',                 // local frontend
+        'https://swiftflow-dfqo.vercel.app'      // <-- Change this to the correct URL
       ];
       if (!origin || allowedOrigins.includes(origin)) {
         callback(null, true);
@@ -70,7 +70,7 @@ app.use(
         callback(new Error('Not allowed by CORS'));
       }
     },
-    credentials: true, // allows cookies/auth headers
+    credentials: true,
   })
 );
 
